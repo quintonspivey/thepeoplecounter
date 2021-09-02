@@ -6,6 +6,9 @@ function App() {
   function addFunction(){
     setCount(count + 1);
   }
+  function deleteFunction(){
+    setCount(count -1);
+  }
   return (
     <div className="App">
       
@@ -16,6 +19,11 @@ function App() {
     <div className='button'>
       <button onClick = {addFunction}>
         Add
+      </button>
+    </div>
+    <div className='button'>
+      <button onClick = {deleteFunction}>
+        Delete
       </button>
     </div>
     </div>
